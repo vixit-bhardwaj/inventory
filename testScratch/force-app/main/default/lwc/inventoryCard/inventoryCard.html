@@ -1,0 +1,25 @@
+<!--
+  @description       : 
+  @author            : Vixit Bhardwaj - TA AtoS
+  @group             : 
+  @last modified on  : 12-31-2020
+  @last modified by  : Vixit Bhardwaj - TA AtoS
+  Modifications Log 
+  Ver   Date         Author                     Modification
+  1.0   12-31-2020   Vixit Bhardwaj - TA AtoS   Initial Version
+-->
+<template>
+  <div class={vehicle.classStyle} onclick={handleClick}>
+    <lightning-card>
+      <lightning-badge
+        label={vehicle.status}
+        class={vehicle.statusBadge}
+        slot="actions"
+      ></lightning-badge>
+      <image src={vehicle.imageUrl}></image>
+      <p class="slds-p-horizontal_small"><B>{vehicle.title}</B></p>
+      <p class="slds-p-horizontal_small">{vehicle.package}</p>
+      <p class="slds-p-horizontal_small">VIN: {vehicle.vin}</p>
+    </lightning-card>
+  </div>
+</template>

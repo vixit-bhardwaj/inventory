@@ -1,0 +1,10 @@
+.pointernotallowed {
+  cursor: not-allowed;
+}
+.pointer {
+  cursor: pointer;
+}
+.mute {
+  opacity: 50%;
+  cursor: pointer;
+}
